@@ -8,12 +8,10 @@ import MostPopular from './components/MostPopular/MostPopular';
 import Navbar from './components/Navbar/Navbar';
 
 import {
-  BrowserRouter,
-  Route, Routes
+  BrowserRouter
 } from 'react-router-dom';
 import Blog from './components/Blog/Blog';
 import Footer from './components/Footer/Footer';
-import NewBlog from './components/NEwBlog/NewBlog';
 import SmallCard from './components/SmallCard/SmallCard';
 function App() {
   return (
@@ -29,9 +27,7 @@ function App() {
       <Client />
       <Company />
       <Blog />   
-      <Routes>
-      <Route path='/newblog' element={<NewBlog />}></Route>
-      </Routes>
+      
       <Footer />
       </BrowserRouter>
      
